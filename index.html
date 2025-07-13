@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кудряшка Z - Официальный Фан-Сайт</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='56'%3E%F0%9F%92%96%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Фон с анимацией -->
+    <div class="background-animation">
+        <div class="floating-hearts"></div>
+    </div>
+
+    <!-- Главный контейнер -->
+    <div class="container">
+        <!-- Заголовок -->
+        <header class="header">
+            <h1 class="main-title">
+                <span class="heart-icon">💖</span>
+                Кудряшка Z
+                <span class="heart-icon">💖</span>
+            </h1>
+            <p class="subtitle">Наша любимая звезда</p>
+            <div class="main-photo-wrapper">
+                <img src="Главная фотка.jpg" alt="Кудряшка Z - главная фотография" class="main-photo">
+            </div>
+            <div class="tg-subscribers-indicator">
+                <a href="https://t.me/kamishmilliechillie" target="_blank" class="tg-subs-link" rel="noopener" aria-label="Перейти в Telegram канал Кудряшки Z">
+                    <i class="fab fa-telegram-plane"></i>
+                    <span class="tg-subs-label">Подписчиков в Telegram:</span>
+                    <span class="tg-subs-count" id="tg-subs-count">0</span>
+                </a>
+            </div>
+            <button class="dark-mode-toggle" id="dark-mode-toggle" title="Переключить ночной режим" aria-label="Переключить ночной режим">🌙</button>
+            <button class="achievements-toggle" id="achievements-toggle" title="Достижения" aria-label="Открыть достижения"><i class="fas fa-trophy"></i></button>
+        </header>
+
+        <!-- Обратный отсчёт -->
+        <section class="countdown-section">
+            <h2 class="section-title">До дня рождения Кудряшки Z осталось:</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Дней</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Часов</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Минут</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Секунд</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Комплименты и признания -->
+        <section class="compliments-section">
+            <h2 class="section-title">Признания в любви от фанатов</h2>
+            <div class="compliments-container">
+                <div class="compliment-card" id="compliment-card">
+                    <div class="compliment-text" id="compliment-text">
+                        Загрузка комплимента...
+                    </div>
+                    <div class="compliment-author" id="compliment-author">
+                        - Фанат
+                    </div>
+                </div>
+                <button class="new-compliment-btn" id="new-compliment-btn" aria-label="Показать новый комплимент">
+                    <i class="fas fa-heart"></i>
+                    Новый комплимент
+                </button>
+            </div>
+        </section>
+
+        <!-- Стена любви -->
+        <section class="love-wall-section">
+            <h2 class="section-title">Стена любви фанатов</h2>
+            <div class="love-wall-container" id="love-wall-container">
+                <div class="love-wall-empty" id="love-wall-empty">Пока нет ни одного признания. Будь первым!</div>
+            </div>
+        </section>
+
+        <!-- Галерея -->
+        <section class="gallery-section">
+            <h2 class="section-title">Галерея красоты</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="2.jpg" alt="Кудряшка Z - Вдохновляющий взгляд" class="gallery-photo">
+                    <div class="gallery-caption">Вдохновляющий взгляд</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="3.jpg" alt="Кудряшка Z - Очаровательная улыбка" class="gallery-photo">
+                    <div class="gallery-caption">Очаровательная улыбка</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-star"></i>
+                        <p>Фото Кудряшки Z</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-heart"></i>
+                        <p>Моменты счастья</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-crown"></i>
+                        <p>Королева красоты</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="4.jpg" alt="Кудряшка Z - Неповторимый стиль" class="gallery-photo">
+                    <div class="gallery-caption">Неповторимый стиль</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="5.jpg" alt="Кудряшка Z - Яркая индивидуальность" class="gallery-photo">
+                    <div class="gallery-caption">Яркая индивидуальность</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="6.jpg" alt="Кудряшка Z - Очарование момента" class="gallery-photo">
+                    <div class="gallery-caption">Очарование момента</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="7.jpg" alt="Кудряшка Z - Вдохновение для всех" class="gallery-photo">
+                    <div class="gallery-caption">Вдохновение для всех</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="8.jpg" alt="Кудряшка Z - Сияющая улыбка" class="gallery-photo">
+                    <div class="gallery-caption">Сияющая улыбка</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="9.jpg" alt="Кудряшка Z - Настоящая звезда" class="gallery-photo">
+                    <div class="gallery-caption">Настоящая звезда</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Интерактивные элементы -->
+        <section class="interactive-section">
+            <h2 class="section-title">Оставь своё признание</h2>
+            <div class="interactive-container">
+                <textarea id="user-compliment" placeholder="Напиши своё признание в любви Кудряшке Z..." aria-label="Поле для ввода комплимента"></textarea>
+                <button class="send-compliment-btn" id="send-compliment-btn" aria-label="Отправить комплимент Кудряшке Z">
+                    <i class="fas fa-paper-plane"></i>
+                    Отправить любовь
+                </button>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <p>Создано с 💖 для Кудряшки Z</p>
+            <div class="social-links">
+                <a href="https://t.me/kamishmilliechillie" class="social-link" target="_blank" rel="noopener" title="Telegram канал" aria-label="Перейти в Telegram канал Кудряшки Z"><i class="fab fa-telegram-plane"></i> Telegram</a>
+            </div>
+            <div class="share-block">
+                <span class="share-label">Поделиться:</span>
+                <a href="#" class="share-btn" id="share-vk" title="Поделиться в VK" aria-label="Поделиться в ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="#" class="share-btn" id="share-tg" title="Поделиться в Telegram" aria-label="Поделиться в Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#" class="share-btn" id="share-ig" title="Поделиться в Instagram" aria-label="Поделиться в Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Модальное окно для уведомлений -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal" aria-label="Закрыть уведомление">&times;</span>
+            <div class="modal-message" id="modal-message"></div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для просмотра фото галереи -->
+    <div class="gallery-modal" id="gallery-modal">
+        <div class="gallery-modal-content">
+            <button class="gallery-modal-close" id="gallery-modal-close" aria-label="Закрыть галерею">&times;</button>
+            <button class="gallery-modal-prev" id="gallery-modal-prev" aria-label="Предыдущее фото">&#8592;</button>
+            <img src="" alt="Фото Кудряшки Z" class="gallery-modal-img" id="gallery-modal-img">
+            <div class="gallery-modal-caption" id="gallery-modal-caption"></div>
+            <button class="gallery-modal-next" id="gallery-modal-next" aria-label="Следующее фото">&#8594;</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно для выбора имени и аватарки -->
+    <div class="fan-modal" id="fan-modal">
+        <div class="fan-modal-content">
+            <span class="fan-modal-close" id="fan-modal-close" aria-label="Закрыть настройки профиля">&times;</span>
+            <h3>Твой фан-ник и аватарка</h3>
+            <input type="text" id="fan-name-input" maxlength="24" placeholder="Имя или ник" autocomplete="off" aria-label="Введите ваше имя или ник">
+            <div class="fan-avatars-list" id="fan-avatars-list"></div>
+            <button class="fan-modal-save-btn" id="fan-modal-save-btn" aria-label="Сохранить настройки профиля">Сохранить</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно достижений -->
+    <div class="achievements-modal" id="achievements-modal">
+        <div class="achievements-modal-content">
+            <span class="achievements-modal-close" id="achievements-modal-close" aria-label="Закрыть достижения">&times;</span>
+            <h3>Достижения фаната</h3>
+            <div class="achievements-list" id="achievements-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
